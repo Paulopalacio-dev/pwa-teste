@@ -12,7 +12,6 @@ export default function TextTittle(props) {
 const styles = StyleSheet.create({
   textBox: {
     padding:30,
-  
   },
   text: {
     fontSize: 16,
