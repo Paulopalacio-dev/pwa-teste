@@ -18,8 +18,9 @@ export default function Routes() {
           tabBarActiveTintColor:"#D22688",
           tabBarInactiveTintColor:"black",
           tabBarLabelPosition:"below-icon",
-          tabBarStyle: { height: 50, marginBottom: 20, marginTop:10, marginHorizontal:30},
-          headerStyle:{height: 0}
+          tabBarStyle: { height: 50,borderTopWidth: 0, marginBottom: 20, marginTop:10, marginHorizontal:30},
+          headerStyle:{height: 0},
+          
         }}
       >
         

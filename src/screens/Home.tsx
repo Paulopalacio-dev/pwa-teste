@@ -3,8 +3,6 @@ import { SafeAreaView, View, ScrollView } from 'react-native';
 import CardButton from '../components/Button/CardButton';
 import HeaderBase from '../components/Header/HeaderBase';
 import TextTittle from '../components/TextTittle';
-import Values from './Values';
-
 
 export default function Home() {
   const [values, setValue] = useState('');
@@ -21,7 +19,7 @@ export default function Home() {
             refinMaxValue:data.refinMaxValue,
             creditCardMaxValue:data.creditCardMaxValue
           };
-          setValue(dataValue)
+          setValue(dataValue);
         })
      }
   getDataValue()
@@ -33,7 +31,7 @@ export default function Home() {
       value={values.newLoanMaxValue}
       />
       <ScrollView >
-        <TextTittle>Oportunidades</TextTittle>
+        <TextTittle subtittle={'Oportunidades'}></TextTittle>
         <View style={{ flex:1, flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
           <CardButton 
           image={require('../../assets/images/newLoan-2.png')}

@@ -22,7 +22,11 @@ const styles = StyleSheet.create({
     width:162,
     height: 163,
     borderRadius:20,
-    backgroundColor: "#fff",  
+    backgroundColor: "#fff",
+    shadowColor: '#5B5B5B33',
+    shadowOffset: {width: -5, height: 5},
+    shadowOpacity: 0.50,
+    shadowRadius: 10,
   },
   text: {
     fontSize: 14,

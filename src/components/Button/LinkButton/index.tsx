@@ -2,23 +2,26 @@ import * as React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
 
-export default function TextTittle(props) {
+export default function LinkButton(props) {
     return (
       <View style={styles.textBox}>
-        <Text style={styles.text}>{ props.subtittle }</Text>
+        <Text style={styles.text}>{ props.link }</Text>
       </View>
 )}
 
 const styles = StyleSheet.create({
   textBox: {
-    paddingTop:30,
+    paddingTop:15,
     paddingBottom:5,
-    left:30,
+    justifyContent:'center',
+    alignItems:'center',
   },
   text: {
-    fontSize: 16,
+    borderBottomColor: '#D22688',
+    borderBottomWidth: 1,
+    fontSize: 13,
     fontWeight:600,
     align:'center',
-    color: '#000'
+    color: '#D22688'
   }
 });
