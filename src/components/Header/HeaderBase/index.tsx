@@ -16,7 +16,7 @@ export default function HeaderBase(props) {
         </View>
           <Text style={styles.clientName}>Olá, {props.name}</Text>
           <Text style={styles.textValue}>Seu crédito disponível é de</Text>
-          <Text style={styles.value}>R$ 5.599,00{props.value}</Text>
+          <Text style={styles.value}>R$ {props.value}</Text>
         <View style={{  position: 'absolute', justifyContent: 'flex-end', bottom:-15}}>
           <Ionicons name="chevron-down-circle" size={35} color="#D22688" />
         </View>

@@ -1,4 +1,3 @@
-import { Montserrat_600SemiBold } from '@expo-google-fonts/montserrat';
 import * as React from 'react';
 import { View, StyleSheet, Text, Image} from 'react-native';
 
@@ -31,14 +30,14 @@ const styles = StyleSheet.create({
     color: '#000'
   },
   value: {
-    paddingTop:6,
+    paddingBottom:10,
     fontSize: 12,
     color: 'rgba(210,38,136,1)'
   },
   tinyLogo: {
     marginVertical:15,
-    padding:30,
-    width: 50,
-    height: 50,
+    padding:25,
+    width: 43,
+    height: 43,
   },
 });

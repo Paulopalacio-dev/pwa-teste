@@ -15,10 +15,10 @@ export default function Routes() {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor:"rgba(210,38,136,1)",
+          tabBarActiveTintColor:"#D22688",
           tabBarInactiveTintColor:"black",
           tabBarLabelPosition:"below-icon",
-          tabBarStyle: { height: 50, marginBottom: 10, marginHorizontal:25},
+          tabBarStyle: { height: 50, marginBottom: 20, marginTop:10, marginHorizontal:30},
           headerStyle:{height: 0}
         }}
       >
