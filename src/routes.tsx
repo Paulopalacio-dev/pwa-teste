@@ -3,8 +3,8 @@ import { Ionicons} from '@expo/vector-icons'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './screens/Home'
-import Contracts from './screens/Contracts';
-import Question from './screens/Question'
+import Values from './screens/Values';
+import Period from './screens/Period'
 
 
 const Tab = createBottomTabNavigator();
@@ -31,20 +31,20 @@ export default function Routes() {
        />
 
         <Tab.Screen
-        name="Contratos"
-        component={Contracts}
+        name="Valores"
+        component={Values}
         options={{tabBarIcon: ({color}) => <Ionicons name="documents-outline" size={25} color={color} />}}
          />
 
         <Tab.Screen
-        name="Dúvidas"
-        component={Question}
+        name="Período"
+        component={Period}
         options={{tabBarIcon: ({color}) => <Ionicons name="help-circle-outline" size={26} color={color} />}}
         />
 
         <Tab.Screen
           name="Conta"
-          component={Question}
+          component={Period}
           options={{tabBarIcon: ({color}) => <Ionicons name="person-outline" size={24} color={color} />}}
         />
 

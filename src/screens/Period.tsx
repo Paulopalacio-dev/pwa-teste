@@ -1,19 +1,19 @@
 import  React, {useState} from 'react';
 import { View, } from 'react-native';
-import ValueButton from '../components/Button/ValueButton';
+
 import CenterTittle from '../components/Header/CenterTittle';
 import TextTittle from '../components/TextTittle';
 import TextButton from '../components/Button/TextButton';
-import LinkButton from '../components/Button/LinkButton';
-import InputValue from '../components/Input/InputValue';
+import InputMonth from '../components/Input/InputMonth';
+import MonthButton from '../components/Button/MonthButton';
 
 
-export default function Contracts() {
+export default function Values() {
 
   const [values, setValues] = useState('');
 
   const getDataValue = () => {
-    const endpoint = `https://5fpaprjjbl.execute-api.us-east-1.amazonaws.com/test/values`;
+    const endpoint = `https://5fpaprjjbl.execute-api.us-east-1.amazonaws.com/test/installments`;
 
     fetch(endpoint)
       .then(response => response.json())
@@ -21,8 +21,8 @@ export default function Contracts() {
           const dataValue = {
             maxValue: data.max,
             minValue: data.min,
-            sugestionValue1:data.suggestionValues[1],
-            sugestionValue2:data.suggestionValues[2],
+            sugestionValue1:data.suggestionInstallments[1],
+            sugestionValue2:data.suggestionInstallments[2],
           };
           setValues(dataValue);
         })
@@ -31,20 +31,20 @@ export default function Contracts() {
 
   return (
     <View style={{  justifyContent: 'center' }}>
-      <CenterTittle tittle={'Valores'}/>
-      <TextTittle subtittle={'De quanto você precisa?'}/>
+      <CenterTittle tittle={'Período'}/>
+      <TextTittle subtittle={'Em quanto tempo você quer pagar?'}/>
       <View style={{ flex:1, flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
-        <ValueButton value={values.minValue}/>
-        <ValueButton value={values.sugestionValue2}/>
-        <ValueButton value={values.sugestionValue1}/>
-        <ValueButton value={values.maxValue}/>
-        <TextTittle subtittle={'Outro valor'}/>
-        <InputValue/>
+        <MonthButton value={values.minValue}/>
+        <MonthButton value={values.sugestionValue2}/>
+        <MonthButton value={values.sugestionValue1}/>
+        <MonthButton value={values.maxValue}/>
         
+        <InputMonth subtittle={'   Meses'}/>
+
       </View>
       <View style={{ alignItems: 'center'}}>
       <TextButton />
-      <LinkButton link={'Simule sua parcela'}/>
+      
       </View>
       
     </View>

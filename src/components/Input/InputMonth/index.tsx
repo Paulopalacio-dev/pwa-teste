@@ -2,15 +2,14 @@ import * as React from 'react';
 import { SafeAreaView, StyleSheet, TextInput, Text } from 'react-native';
 
 
-export default function InputValue(props) {
+export default function InputMonth(props) {
     return (
       <SafeAreaView style={styles.textBox}>
-        <Text style={styles.textTittle}>{ props.subtittle }</Text>
         <TextInput
          style={styles.text}
-         placeholder="R$ 00,00" 
+         placeholder="00" 
          />
-         
+          <Text style={styles.textTittle}>{ props.subtittle }</Text>
       </SafeAreaView>
 )}
 
@@ -18,7 +17,7 @@ const styles = StyleSheet.create({
   textBox: {
     paddingTop:30,
     paddingBottom:5,
-    flexDirection:'row',
+    flexDirection:'row'
   },
   textTittle: {
     fontSize: 16,
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
   },
   text: {
     paddingBottom:6,
-    width:106,
+    width:75,
     borderBottomColor: '#7070708F',
     borderBottomWidth: 1,
     fontSize: 16,
