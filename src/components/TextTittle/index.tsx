@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
 
-export default function TextTittle(props) {
+export default function TextTittle(props:any) {
     return (
       <View style={styles.textBox}>
         <Text style={styles.text}>{ props.subtittle }</Text>
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   textBox: {
     paddingTop:30,
     paddingBottom:5,
-    left:30,
+    left:15,
     right:0,
   },
   text: {

@@ -4,7 +4,9 @@ import CardButton from '../components/Button/CardButton';
 import HeaderBase from '../components/Header/HeaderBase';
 import TextTittle from '../components/TextTittle';
 
-export default function Home() {
+
+
+export default function Home({navigation}:{navigation:any}) {
   const [values, setValue] = useState('');
 
   const getDataValue = () => {
@@ -24,6 +26,8 @@ export default function Home() {
      }
   getDataValue()
 
+ 
+
   return (
     <SafeAreaView style={{ flex:1, minHeight:812}}>
       <HeaderBase 
@@ -31,12 +35,14 @@ export default function Home() {
       value={values.newLoanMaxValue}
       />
       <ScrollView >
-        <TextTittle subtittle={'Oportunidades'}></TextTittle>
+        <TextTittle subtittle={'Oportunidades'}
+        ></TextTittle>
         <View style={{ flex:1, flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
           <CardButton 
           image={require('../../assets/images/newLoan-2.png')}
           tittle={'Novo Emprestimo'}
           value={values.newLoanMaxValue}
+          onPress={() => navigation.navigate('Values')}
           />
           <CardButton 
           image={require('../../assets/images/portability-2.png')}

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
 
-export default function LinkButton(props) {
+export default function LinkButton(props:any) {
     return (
       <View style={styles.textBox}>
         <Text style={styles.text}>{ props.link }</Text>

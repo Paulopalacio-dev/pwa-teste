@@ -3,12 +3,12 @@ import { View, StyleSheet, Text} from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
-export default function CenterTittle(props, { navigation }) {
+export default function CenterTittle(props:any) {
     return (
       <View style={styles.square}>
         <View style={styles.image}>
           <MaterialCommunityIcons name="chevron-left" size={30} color="#FFFFFF" 
-          onPress={() => navigation.navigate('../../screens/Home')}
+         
         />
           
         </View>

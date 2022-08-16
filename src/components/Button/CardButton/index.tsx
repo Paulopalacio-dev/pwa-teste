@@ -2,16 +2,20 @@ import * as React from 'react';
 import { View, StyleSheet, Text, Image} from 'react-native';
 
 
-export default function CardButton(props) {
+export default function CardButton(props:any, {navigation}:{navigation:any}) {
     return (
-      <View style={styles.square}>
-         <Image
+      
+      <View style={styles.square}
+      >
+      <Image
         style={styles.tinyLogo}
         source={props.image}
+        onPress={() => navigation.navigate('Values')}
       />
         <Text style={styles.text}>{props.tittle}</Text>
         <Text style={styles.value}>Até R$ {props.value}</Text>
       </View>
+      
 )}
 
 const styles = StyleSheet.create({

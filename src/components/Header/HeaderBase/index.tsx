@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
-export default function HeaderBase(props) {
+export default function HeaderBase(props:any) {
     return (
       <View style={styles.square}>
         <View style={styles.image}>

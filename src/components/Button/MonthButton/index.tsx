@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet, Text} from 'react-native';
 
 
-export default function MonthButton(props) {
+export default function MonthButton(props:any) {
     return (
       <View style={styles.square}>
         <Text style={styles.text}> {props.value} meses</Text>

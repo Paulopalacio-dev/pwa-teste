@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SafeAreaView, StyleSheet, TextInput, Text } from 'react-native';
 
 
-export default function InputMonth(props) {
+export default function InputMonth(props:any) {
     return (
       <SafeAreaView style={styles.textBox}>
         <TextInput

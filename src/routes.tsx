@@ -1,17 +1,37 @@
-import * as React from 'react';
+import React from 'react';
 import { Ionicons} from '@expo/vector-icons'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/Home'
 import Values from './screens/Values';
-import Period from './screens/Period'
+import Period from './screens/Period';
+import Options from './screens/Options';
 
+type RootStackParamList = {
+  Home: { name: string } // undefined because you aren't passing any params to the home screen
+  Values: { name: string }; 
+  Period: { name: string };
+  Options: { name: string };
+};
+const Stack = createStackNavigator<RootStackParamList>();
+
+function HomeStackScreen() {
+  return (
+    <Stack.Navigator>
+     <Stack.Screen name="Home" component={Home} />
+     <Stack.Screen name="Values" component={Values} />
+     <Stack.Screen name="Period" component={Period} />
+     <Stack.Screen name="Options" component={Options} />
+    </Stack.Navigator>
+   );
+ }
 
 const Tab = createBottomTabNavigator();
 
-
 export default function Routes() {
   return (
+
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
@@ -26,7 +46,7 @@ export default function Routes() {
         
         <Tab.Screen 
         name="Início"
-        component={Home}
+        component={HomeStackScreen}
         options={{tabBarIcon: ({color}) => <Ionicons name="home-outline" size={25} color={color}/>}}
        />
 
@@ -43,8 +63,8 @@ export default function Routes() {
         />
 
         <Tab.Screen
-          name="Conta"
-          component={Period}
+          name="Opções"
+          component={Options}
           options={{tabBarIcon: ({color}) => <Ionicons name="person-outline" size={24} color={color} />}}
         />
 

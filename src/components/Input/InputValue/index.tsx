@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SafeAreaView, StyleSheet, TextInput, Text } from 'react-native';
 
 
-export default function InputValue(props) {
+export default function InputValue(props:any) {
     return (
       <SafeAreaView style={styles.textBox}>
         <Text style={styles.textTittle}>{ props.subtittle }</Text>

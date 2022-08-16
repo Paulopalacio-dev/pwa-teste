@@ -21,8 +21,8 @@ export default function Values() {
           const dataValue = {
             maxValue: data.max,
             minValue: data.min,
-            sugestionValue1:data.suggestionInstallments[1],
-            sugestionValue2:data.suggestionInstallments[2],
+            sugestionInstallments1:data.suggestionInstallments[1],
+            sugestionInstallments2:data.suggestionInstallments[2],
           };
           setValues(dataValue);
         })
@@ -35,8 +35,8 @@ export default function Values() {
       <TextTittle subtittle={'Em quanto tempo você quer pagar?'}/>
       <View style={{ flex:1, flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
         <MonthButton value={values.minValue}/>
-        <MonthButton value={values.sugestionValue2}/>
-        <MonthButton value={values.sugestionValue1}/>
+        <MonthButton value={values.sugestionInstallments2}/>
+        <MonthButton value={values.sugestionInstallments1}/>
         <MonthButton value={values.maxValue}/>
         
         <InputMonth subtittle={'   Meses'}/>
