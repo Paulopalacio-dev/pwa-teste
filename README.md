@@ -16,12 +16,12 @@
 # Como rodar
 
 ### 1 - Clonar projeto em seu pc
-### 2 - Abrir o codigo no VsCode e no terminal relizar os seguintes comandos
+### 2 - Abrir o codigo no VsCode e no terminal relizar os seguintes comandos:
 
   - yarn
   - yarn web (o camando abrira o projeto no navegador automatico)
   
- Depois que estiver aberto o projeto no navegador aperte F12 para visualizar o projeto em formato mobile.
+### 3 - Depois que estiver aberto o projeto no navegador aperte F12 para visualizar o projeto em formato mobile.
  
  
  Algumas considerações:
