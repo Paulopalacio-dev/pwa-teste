@@ -1,20 +1,22 @@
 # PWA TESTE
+ Projeto afim de participar de processo seletivo da MeuTudo
 
-## Projeto afim de participar de processo seletivo da MeuTudo
+
 
 <p>🚀 Implementaçao de telas de um PWA </p>
 
 # Tecnologias utilizada
 
-## React
-## ReactNative
-## Typescript
-## Expo
+### React
+### ReactNative
+### Typescript
+### Expo
+
 
 # Como rodar
 
-## 1 - Clonar projeto em seu pc
-## 2 - Abrir o codigo no VsCode e no terminal relizar os seguintes comandos
+### 1 - Clonar projeto em seu pc
+### 2 - Abrir o codigo no VsCode e no terminal relizar os seguintes comandos
 
   - yarn
   - yarn web (o camando abrira o projeto no navegador automatico)
