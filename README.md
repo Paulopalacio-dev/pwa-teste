@@ -14,18 +14,20 @@
 
 # Como rodar
 
-### 1 - Clonar projeto em seu pc
-### 2 - Abrir o codigo no VsCode e no terminal relizar os seguintes comandos:
+### 1 - Clonar projeto do GitHub em seu pc
+### 2 - Abrir o código no VsCode e no terminal, relizar os seguintes comandos:
 
   - yarn
-  - yarn web (o camando abrira o projeto no navegador automatico)
+  - yarn web (o camando abrirá o projeto no navegador automaticamente)
   
-### 3 - Depois que estiver aberto o projeto no navegador aperte F12 para visualizar o projeto em formato mobile.
+### 3 - Depois que estiver aberto o projeto, no navegador aperte F12 para visualizar o projeto em formato mobile.
  
  
+
+
  Algumas considerações:
- Fiz as telas sugeridas no challenge e para visualiza-las e so clicar nos seus respectivos nomes na tab navigation no rodapé.
- Para cada tela eu realizei a renderizaçao dos dados mockados.
- Tive problemas em configurar as rotas entre as telas, assim os botões não estão funcionando corretamente. 
+ Fiz as telas sugeridas no challenge e para visualiza-las é so clicar nos seus respectivos nomes na tab navigation no rodapé.
+ Para cada tela eu realizei a renderização dos dados mockados.
+ Tive problemas em configurar as rotas entre as telas, por consequencia os botões não estão funcionando corretamente. 
  
  
