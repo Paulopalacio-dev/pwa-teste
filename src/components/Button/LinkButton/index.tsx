@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 
 export default function LinkButton(props:any) {
     return (
       <View style={styles.textBox}>
+        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Text style={styles.text}>{ props.link }</Text>
+        </TouchableOpacity>
       </View>
 )}
 

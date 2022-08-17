@@ -1,4 +1,4 @@
-import  React, {useState} from 'react';
+import  React from 'react';
 import { View, } from 'react-native';
 
 import CenterTittle from '../components/Header/CenterTittle';
@@ -6,7 +6,7 @@ import TextTittle from '../components/TextTittle';
 import OptionContractButton from '../components/Button/OptionContractButton';
 
 
-export default function options() {
+export default function Options() {
 
  
   return (

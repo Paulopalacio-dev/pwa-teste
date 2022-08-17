@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { View, StyleSheet, Text} from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 
-export default function ValueButton(props) {
+export default function ValueButton(props:any) {
     return (
+      <TouchableOpacity>
       <View style={styles.square}>
         <Text style={styles.text}>R$ {props.value}</Text>
       </View>
+      </TouchableOpacity>
 )}
 
 const styles = StyleSheet.create({

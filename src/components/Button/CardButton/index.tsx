@@ -1,20 +1,18 @@
 import * as React from 'react';
-import { View, StyleSheet, Text, Image} from 'react-native';
+import { View, StyleSheet, Text, Image, TouchableOpacity} from 'react-native';
 
-
-export default function CardButton(props:any, {navigation}:{navigation:any}) {
+export default function CardButton(props:any) {
     return (
-      
-      <View style={styles.square}
-      >
-      <Image
-        style={styles.tinyLogo}
-        source={props.image}
-        onPress={() => navigation.navigate('Values')}
-      />
+      <TouchableOpacity onPress={()=> navigation.navigate('Values')} >
+      <View style={styles.square}>
+        <Image
+          style={styles.tinyLogo}
+          source={props.image}
+        />
         <Text style={styles.text}>{props.tittle}</Text>
         <Text style={styles.value}>Até R$ {props.value}</Text>
       </View>
+      </TouchableOpacity>
       
 )}
 

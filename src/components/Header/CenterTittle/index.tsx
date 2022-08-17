@@ -1,17 +1,16 @@
 import React from 'react';
-import { View, StyleSheet, Text} from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 export default function CenterTittle(props:any) {
     return (
       <View style={styles.square}>
-        <View style={styles.image}>
-          <MaterialCommunityIcons name="chevron-left" size={30} color="#FFFFFF" 
-         
-        />
-          
-        </View>
+        <TouchableOpacity 
+        style={styles.image}
+        onPress={()=> navigation.goBack()}>
+          <MaterialCommunityIcons name="chevron-left" size={30} color="#FFFFFF" />
+        </TouchableOpacity>
           <Text style={styles.tittle}>{props.tittle}</Text>
       </View>
 )}

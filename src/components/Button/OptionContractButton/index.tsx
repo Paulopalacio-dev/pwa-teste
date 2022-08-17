@@ -1,9 +1,10 @@
 import  React from 'react';
-import { View, StyleSheet, Text, Image, SafeAreaView} from 'react-native';
+import { View, StyleSheet, Text, Image, SafeAreaView, TouchableOpacity} from 'react-native';
 
 
 export default function OptionContractButton(props:any) {
     return (
+      <TouchableOpacity>
       <SafeAreaView style={styles.square}>
         <View style={styles.topSquare}>
           <View style={styles.containerLogo}>
@@ -27,7 +28,8 @@ export default function OptionContractButton(props:any) {
           <Text style={styles.valueTax}>19 de agosto a 22 de setembro de 2022</Text>
           <Text style={styles.continueButton}>Contratar ></Text>
         </View>
-      </SafeAreaView>
+              </SafeAreaView>
+      </TouchableOpacity>
 )}
 
 const styles = StyleSheet.create({

@@ -43,7 +43,7 @@ export default function Values() {
         
       </View>
       <View style={{ alignItems: 'center'}}>
-      <TextButton />
+      <TextButton navigateTo={'Period'} />
       <LinkButton link={'Simule sua parcela'}/>
       </View>
       

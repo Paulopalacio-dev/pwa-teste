@@ -8,7 +8,7 @@ import InputMonth from '../components/Input/InputMonth';
 import MonthButton from '../components/Button/MonthButton';
 
 
-export default function Values() {
+export default function Period() {
 
   const [values, setValues] = useState('');
 
@@ -44,7 +44,6 @@ export default function Values() {
       </View>
       <View style={{ alignItems: 'center'}}>
       <TextButton />
-      
       </View>
       
     </View>

@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { View, StyleSheet, Text} from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 
-export default function MonthButton(props:any) {
+export default function MonthButton(props:any, ) {
     return (
+      <TouchableOpacity>
       <View style={styles.square}>
         <Text style={styles.text}> {props.value} meses</Text>
       </View>
+      </TouchableOpacity>
 )}
 
 const styles = StyleSheet.create({

@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { View, StyleSheet, Text} from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 
-export default function TextButton() {
+export default function TextButton(props) {
     return (
+      <TouchableOpacity onPress={()=> navigation.navigate(props.navigateTo)}>
       <View style={styles.square}>
         <Text style={styles.text}>Continuar</Text>
       </View>
+      </TouchableOpacity>
 )}
 
 const styles = StyleSheet.create({

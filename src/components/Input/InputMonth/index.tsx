@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     textAlign:'center',
     color: '#000000',
-    outline:'none',
+    
     
   }
 });
