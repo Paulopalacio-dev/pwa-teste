@@ -6,11 +6,10 @@
 <p>🚀 Implementaçao de telas de um PWA </p>
 
 # Tecnologias utilizada
-
-### React
-### ReactNative
-### Typescript
-### Expo
+- React
+- ReactNative
+- Typescript
+- Expo
 
 
 # Como rodar
